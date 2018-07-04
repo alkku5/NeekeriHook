@@ -46,22 +46,22 @@ void __stdcall HookManager::FrameStageNotify(ClientFrameStage_t stage)
 	ofunc(stage);
 }
 
-void __stdcall HookManager::hkCreateMove(int sequence_number, float input_sample_frametime, bool active, bool& bSendPacket, CUserCmd* pCmd)
+void __stdcall HookManager::hkCreateMove(int sequence_number, float input_sample_frametime, bool active, bool& bSendPacket)
 {
 	C_BaseEntity* localplayer = g_pEntList->GetClientEntity(g_pEngine->GetLocalPlayer());
 
 	auto oCreateMove = hlclient_hook.get_original<CreateMove>(index::CreateMove);
 	oCreateMove(g_pClient, sequence_number, input_sample_frametime, active);
 
-	/*
+	
 	auto cmd = g_pInput->GetUserCmd(sequence_number);
 	auto verified = g_pInput->GetVerifiedCmd(sequence_number);
 
 	if (!cmd || !cmd->command_number)
 		return;
-		*/
-	if (pCmd == nullptr)
-		return;
+		
+	//if (pCmd == nullptr)
+		//return;
 		
 	if (g_Settings.Menu.Bhop) {
 
@@ -70,9 +70,9 @@ void __stdcall HookManager::hkCreateMove(int sequence_number, float input_sample
 
 		if (localplayer && localplayer->IsAlive())
 		{
-			if (pCmd->buttons & IN_JUMP && !(localplayer->m_fFlags() & FL_ONGROUND))
+			if (cmd->buttons & IN_JUMP && !(localplayer->m_fFlags() & FL_ONGROUND))
 			{
-				pCmd->buttons &= ~IN_JUMP;
+				cmd->buttons &= ~IN_JUMP;
 			}
 		}
 	}
