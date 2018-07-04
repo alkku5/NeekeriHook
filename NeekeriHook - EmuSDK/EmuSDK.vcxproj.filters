@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="SDK.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawManager.cpp" />
+    <ClCompile Include="HookManager.cpp" />
+    <ClCompile Include="ImGUI\imgui.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGUI\imgui_draw.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGUI\DX9\imgui_impl_dx9.cpp">
+      <Filter>ImGUI\DX9</Filter>
+    </ClCompile>
+    <ClCompile Include="CheatMain.cpp" />
+    <ClCompile Include="NetvarManager.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="vfunc.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_demo.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{188157db-8bc3-4da9-9d07-4080995579db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Interfaces">
+      <UniqueIdentifier>{c4448431-48ac-4f6c-b620-cce043226dbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Structs">
+      <UniqueIdentifier>{98c5b70c-0c29-459b-8ebe-69dfb0353b67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Classes">
+      <UniqueIdentifier>{b1966e14-04bf-46c2-918f-1111268b8590}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features">
+      <UniqueIdentifier>{ac631007-dc8e-47f5-af12-54c7d92f53df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGUI">
+      <UniqueIdentifier>{57f2ba3b-d1e8-4195-b6ab-db757aca544d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGUI\DX9">
+      <UniqueIdentifier>{26ab6b95-55b8-4bef-9ce4-a77c07e87e46}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RecvProp.h">
+      <Filter>SDK\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientClass.h">
+      <Filter>SDK\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="IBaseClientDLL.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="CUserCmd.h">
+      <Filter>SDK\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="QAngle.h">
+      <Filter>SDK\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>SDK\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>SDK\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseEntity.h">
+      <Filter>SDK\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseWeapon.h">
+      <Filter>SDK\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerInfo.h">
+      <Filter>SDK\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="Collideable.h">
+      <Filter>SDK\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="VMT.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineTrace.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="ConVar.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="StudioDefinitions.h">
+      <Filter>SDK\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="Prediction.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsAPI.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IPaint.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>SDK\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEvent.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialDefinitions.h">
+      <Filter>SDK\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelMaterial.h">
+      <Filter>SDK\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Features</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUI\imgui.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUI\imgui_internal.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUI\stb_rect_pack.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUI\stb_textedit.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUI\stb_truetype.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUI\imconfig.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUI\DX9\imgui_impl_dx9.h">
+      <Filter>ImGUI\DX9</Filter>
+    </ClInclude>
+    <ClInclude Include="CUtlVector.h">
+      <Filter>SDK\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="vfunc.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="IPanel.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
